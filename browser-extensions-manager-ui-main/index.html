@@ -21,9 +21,9 @@
 
 <body class="p-20 text-gray-200">
     <!------------------------------------------------------->
-<header class="max-w-6xl mx-auto flex justify-between items-center border border-red-500 bg-[#161b28]">
+<header class="max-w-6xl mx-auto flex justify-between items-center p-4 mb-10 rounded-lg border-red-500 bg-[#161b28]">
   <div class="flex items-center border-blue-500">
-    <img src="assets/images/logo.svg">
+    <img class="invert" src="assets/images/logo.svg">
   </div>
   <button class="border border-green-500 bg-[gray] rounded-lg p-2">
     <img src="assets/images/icon-sun.svg"></img>
@@ -35,18 +35,25 @@
   <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-6">
     <h1 class="text-3xl font-bold">Extensions List</h1>
 
-    <div class="bg-[#161b28] flex gap-2 rounded-lg md:self-center border-green-400 red">
-      <button class="red text-white px-5 py-2 rounded-lg">All</button>
-      <button class="text-gray-200 py-2 rounded-lg">Active</button>
-      <button class="text-gray-200 py-2 rounded-lg">Inactive</button>
+    <div class=" flex gap-2 rounded-lg md:self-center border-green-400 red">
+      <button class="text-white px-3 bg-[#FF0000] py-2 rounded-lg">All</button>
+      <button class="text-gray-200 px-5 bg-[#161b28] py-2 rounded-lg">Active</button>
+      <button class="text-gray-200 px-3 bg-[#161b28] py-2 rounded-lg">Inactive</button>
     </div>
   </div>
   <!-------------------------CARDS------------------------------>
-  <div class="border border-red-900">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 border border-red-900">
 
     <div>
-
+      <div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
+  </div>
+  <div>
+    <button></button>
+
   </div>
 
 </main>
