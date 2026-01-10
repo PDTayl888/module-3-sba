@@ -12,26 +12,33 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    body { background-color: #0b0f1a; font-family: 'Inter', sans-serif; }
+    .black-bg { background-color: #1a202e; };
+    .red { background-color: red;};
+
   </style>
 </head>
 
-<body class="p-8">
+<body class="p-20 text-gray-200">
     <!------------------------------------------------------->
-<header class="flex justify-between items-center border border-red-500">
-  <div class="border border-blue-500">
+<header class="max-w-6xl mx-auto flex justify-between items-center border border-red-500 bg-[#161b28]">
+  <div class="flex items-center border-blue-500">
     <img src="assets/images/logo.svg">
   </div>
-  <button class="border border-green-500"></button>
+  <button class="border border-green-500 bg-[gray] rounded-lg p-2">
+    <img src="assets/images/icon-sun.svg"></img>
+  </button>
 </header>
   <!------------------------------------------------------->
-<main class="border border-blue-900">
-  <div>
-    <h1>Extensions List</h1>
+  
+<main class="max-w-6xl mx-auto border-blue-900">
+  <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-6">
+    <h1 class="text-3xl font-bold">Extensions List</h1>
 
-    <div>
-      <button>All</button>
-      <button>Active</button>
-      <button>Inactive</button>
+    <div class="bg-[#161b28] flex gap-2 rounded-lg md:self-center border-green-400 red">
+      <button class="red text-white px-5 py-2 rounded-lg">All</button>
+      <button class="text-gray-200 py-2 rounded-lg">Active</button>
+      <button class="text-gray-200 py-2 rounded-lg">Inactive</button>
     </div>
   </div>
   <!-------------------------CARDS------------------------------>
